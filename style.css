@@ -1,0 +1,156 @@
+body{
+  margin: 0; 
+  font-family: "Lucida Console", "Courier New", monospace;
+  width:100vw;
+  height:100vh;
+  max-width: 1280px;
+  max-height: 800px;
+  background-color: black;
+
+}
+
+.root{
+  padding: 0em;
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  right: 0em;
+  bottom: 0em;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.timer-wrapper{
+  position: absolute;
+  z-index: 9999;
+  display:flex;
+  flex-wrap: wrap;
+  flex:3;
+  height:92%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.gif{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+
+
+
+
+.timer-wrapper > * {
+  color: rgb(191, 57, 57);
+  flex: 1 100%;
+  font-size:11vh;
+  text-align: center;
+}
+
+.reset-btn{
+  border-top : 0em ;
+}
+
+.gif-wrapper{
+  border: 0.25rem solid;
+  border-left : 0em ;
+  flex:1;
+
+}
+
+.timer-seconds{
+  width:100%;
+  height:100%;
+  padding:0em;
+  border-top: 0em;
+  margin:0;
+}
+
+.timer-seconds::-moz-progress-bar
+{
+    background: black;
+}
+.timer-seconds::-webkit-progress-bar
+{
+    background: white;
+}
+
+.timer-seconds::-webkit-progress-value
+{
+    background: black;
+}
+
+.timer-seconds::-moz-progress-value
+{
+    background: black;
+}
+
+.timer-seconds::-webkit-progress-value
+{
+    background: black;
+}
+
+.timer-hours{
+  border-right : 0em ;
+  flex: 1 auto;
+}
+
+.timer-minutes{
+  flex: 1 auto;
+}
+
+.timer-year{
+  border-top : 0em ;
+}
+
+.timer{
+  font-size:8vw;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.background{
+  z-index: 0;
+  height: 100%;
+}
+
+.top-section{
+  z-index: 2;
+  position: absolute;
+  top: 33.3vh;
+  left: 18.2vh;
+  width:45.8vh;
+  height:11.8vh;
+  background-color: transparent;
+}
+
+.bottom-section{
+  z-index: 2;
+  position: absolute;
+  top: 50.3vh;
+  left: 18vh;
+  width:46.1vh;
+  height:11vh;
+  background-color: white;
+}
+
+#start-btn{
+  z-index: 3;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 99999;
+  background-color: rgb(57, 57, 57);
+}

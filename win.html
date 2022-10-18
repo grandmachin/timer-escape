@@ -1,0 +1,32 @@
+ <!doctype html>
+ <html>
+    <head>
+        <link rel="stylesheet" href="video.css">
+    </head>
+    <body>
+        <meta charset="utf-8">
+        <title>Titre de la page</title>
+        <video autoplay muted id="video">
+            <source src="./media/LOSE.mp4" type="video/mp4">
+        </video>
+        <script>
+            const btns = ["KeyQ","KeyB","KeyC"]
+            var idx = 0;
+
+            document.addEventListener('keydown', (event) => {
+                var code = event.code;
+                if(code==btns[idx]){
+                    idx++;
+                    if(idx == btns.length){
+                        window.location.href = "./";
+                    }
+                }else{
+                    idx=0;
+                }
+                // Alert the key name and key code on keydown
+                
+                }, false);
+
+        </script>
+    </body>
+  </html>

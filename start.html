@@ -1,0 +1,23 @@
+ <!doctype html>
+ <html>
+    <head>
+        <link rel="stylesheet" href="video.css">
+    </head>
+    <body>
+        <meta charset="utf-8">
+        <title>Titre de la page</title>
+        <video id="video">
+            <source src="./media/WIN.mp4" type="video/mp4">
+        </video>
+        <script>
+            function init(){
+                var video = document.getElementById("video");
+                video.play();
+                //console.log(video.duration);
+                window.setTimeout(()=>{
+                    window.location.href = "./";
+                },video.duration*9000);
+            }
+        </script>
+    </body>
+  </html>

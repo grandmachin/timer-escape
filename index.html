@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Escape Game - Timer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="video.css">
+</head>
+
+<body>
+
+  
+<!--   <div class="root">
+    <div class="timer-wrapper">
+      <div class="timer-hours">23</div>
+      <div class="timer-minutes">45</div>
+      <progress class="timer-seconds" value="33" max="100"> 70% </progress>
+      <div class="timer-year">1999</div>
+      <button class="reset-btn" id="reset-btn">Reset</button>
+    </div>
+    <div class="gif-wrapper">
+      <img class="gif" src="./media/gif.gif"/>
+    </div> d
+  </div> -->
+
+
+  <div class="root">
+    <div class="top-section">
+      <img src="./media/roue-chiffres5_1.gif" style="width: 100%; height: 100%; object-fit: cover;"/>
+    </div>
+    <div class="bottom-section">
+      <div class="timer-wrapper">
+        <div class="timer-hours">23</div>
+        <div class="timer-minutes">50</div>
+        </div>
+      <progress class="timer-seconds" value="33" max="100"> 70% </progress>
+    </div>
+    <img class="background" src="./media/horloge.jpg"/>
+    <video hidden class="video" id="videowin">
+      <source src="./media/WIN.mp4" type="video/mp4">
+    </video>
+    <video hidden class="video" id="videoloose">
+      <source src="./media/LOSE.mp4" type="video/mp4">
+    </video>
+  </div>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/jquery-3.6.0.min.js"></script>
+  <button id="start-btn" onclick="init()">START</button>
+
+</body>
+
+</html>
